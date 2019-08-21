@@ -1,0 +1,70 @@
+    1  cd Downloads/
+    2  sudo apt-get install ./google-chrome-stable_current_amd64.deb 
+    3  sudo apt-get install telegram-desktop
+    4  sudo apt-get install gnome-tweaks
+    5  clang-format
+    6  sudo apt-get install clang-format
+    7  cd acm
+    8  grdit acm.cpp 
+    9  gedit acm.cpp 
+   10  sudo apt-get install clang-format
+   11  cd acm
+   12  clang-format i- acm.cpp 
+   13  clang-format -i acm.cpp 
+   14  sudo apt-get purge clang-format
+   15  sudo apt-get autoremove
+   16  clang-format -help
+   17  sudo apt-get clean
+   18  sudo apt-get autoremove
+   19  sudo apt-get update
+   20  sudo apt-get upgrade
+   21  cd acm
+   22  g++ -Wall -std=c++17 acm.cpp -o acm
+   23  mkdir os
+   24  cd os
+   25  mkdir week1
+   26  cd week1
+   27  cd
+   28  cd week1
+   29  cd os/week1
+   30  cd
+   31  cd /os/week1
+   32  cd ./os/week1
+   33  cd
+   34  ls /usr/bin | grep gcc | 
+   35  ls /usr/bin | grep gcc
+   36  ls /usr/bin | grep gcc | tac
+   37  cd os/week1
+   38  ls /usr/bin | grep gcc | tac
+   39  ls /usr/bin | grep gcc | tac >> ex1.txt
+   40  less ex1.txt
+   41  nano ex1.txt
+   42  man find
+   43  find /usr/bin -maxdepth 1 -name "*gcc*" -print
+   44  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort
+   45  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort | tac
+   46  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort | tac > ex1.txt
+   47  nano ex1.txt
+   48  find /usr/bin -maxdepth 1 -name "*gcc*" -print
+   49  sort
+   50  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort
+   51  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort | tac
+   52  man cat
+   53  man tac
+   54  find /usr/bin -maxdepth 1 -name "*gcc*" -print
+   55  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort
+   56  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort | cat
+   57  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort | tac > ex1.txt
+   58  history
+   59  history | less
+   60  history > ex1.txt
+   61  man sh
+   62  nano ex3.sh
+   63  sh ex3.sh
+   64  nano ex4.c
+   65  rm ex4.c
+   66  rm ./ex4.c
+   67  ls
+   68  nano ex1.txt
+   69  find /usr/bin -maxdepth 1 -name "*gcc*" -print | sort | tac > ex1.txt
+   70  history > ex2.txt
