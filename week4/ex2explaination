@@ -1,0 +1,1 @@
+Every five seconds, a fork is created from every running process. At the beginning, only the manually executed process is created and it created on more process. Then, each one of them creates one more, and so forth. Note that the resulting hierarchy is a binomial tree of order n, where n os the number of seconds.
