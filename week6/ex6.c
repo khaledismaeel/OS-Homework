@@ -21,7 +21,7 @@ int main() {
         printf("Child 2 pid read... going to kill after 2 seconds...\n");
         sleep(2);
         printf("Killing child 2...\n");
-        kill(sib, SIGKILL);
+        kill(sib, SIGSTOP);
         printf("Child 2 killed\n");
     } else {
         printf("parent process is about to create second fork...\n");
@@ -47,7 +47,7 @@ int main() {
             printf("Done writing... waiting for child 2...\n");
 
             int status;
-            waitpid(pid2, &status, 0);
+            waitpid(pid2, &status, WUNTRACED);
             printf("Done waiting for child 2... RIP...\n");
         }
     }
