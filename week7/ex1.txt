@@ -1,0 +1,31 @@
+/home/khaled/acm/acm  :
+section                   size    addr
+.interp                     28     680
+.note.gnu.build-id          36     708
+.note.ABI-tag               32     744
+.gnu.hash                   40     776
+.dynsym                    624     816
+.dynstr                    572    1440
+.gnu.version                52    2012
+.gnu.version_r             128    2064
+.rela.dyn                  312    2192
+.rela.plt                  384    2504
+.init                       23    4096
+.plt                       272    4128
+.plt.got                     8    4400
+.text                    11665    4416
+.fini                        9   16084
+.rodata                    104   16384
+.eh_frame_hdr              980   16488
+.eh_frame                 4112   17472
+.gcc_except_table          168   21584
+.init_array                 16   27912
+.fini_array                  8   27928
+.dynamic                   528   27936
+.got                       208   28464
+.data                       24   28672
+.bss                 404002920   28704
+.comment                    35       0
+Total                404023288
+
+
