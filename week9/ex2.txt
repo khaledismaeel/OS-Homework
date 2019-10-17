@@ -1,0 +1,11 @@
+Let us reason greadily in order to construct a sequence with a maximal hit/miss ratio. We can design a sequence such that a page occurs just before it is flushed out of the page table. Such a sequence would differ depending on the size of the page table and the number of bits in the page counters. In this exercise we are using 32 bits for the page counter with a page table of size 50. So we can construct:
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 1...
+
+This sequence has page misses on the first iteration from 1 to 33. But from there onwards it will always hit.
+
+As for the worst case, we can design the sequence so that a page occurs as soon as it is flushed out of the page table. That would give:
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 1...
+
+This sequence never hits, because when page 1 occurs for the second time the page table contains the pages from 2 to 33 and page 1 has been flushed on the previous iteration. So the sequence has hit ratio 0%.
