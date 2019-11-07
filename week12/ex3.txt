@@ -1,0 +1,39 @@
+buffer size = 1024, no sync
+
+real    0m0.007s
+user    0m0.000s
+sys     0m0.007s
+
+buffer size = 512, no sync
+
+real    0m0.011s
+user    0m0.005s
+sys     0m0.005s
+
+buffer size = 256, no sync
+
+real    0m0.019s
+user    0m0.000s
+sys     0m0.019s
+
+buffer size = 1024, sync
+
+real    0m2.121s
+user    0m0.003s
+sys     0m0.069s
+
+buffer size = 512, sync
+
+real    0m4.186s
+user    0m0.017s
+sys     0m0.139s
+
+buffer size = 256, sync
+
+real    0m8.351s
+user    0m0.014s
+sys     0m0.302s
+
+It turns out that dividing the buffer size in half almost doubles the execution time of the copy program. This is because halving the buffer size results in twice the number of read/write system calls. At the same time, the effect of the buffer size on the read/write system is neglible, as all considered buffer sizes require almost equal time to read/write to the disk.
+
+Furthermore, turning on I/O syncing dramatically increases the execution time. This is because syncing forces the buffer to flush to the disk before returning, eliminating the possibility of any optimizations the kernel might find appropriate for this case (buffering the results once again before flushing).
